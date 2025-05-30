@@ -1,6 +1,10 @@
 const GsapScrollTrigger = () => {
   // TODO: Implement the gsap scroll trigger
 
+  // COULDN'T GET THIS WORKING
+  // HAD PROBLEMS
+  // WILL COME BACK TO IT LATER WHEN I GET BETTER AT GSAP
+
   return (
     <main>
       <h1>GsapScrollTrigger</h1>
