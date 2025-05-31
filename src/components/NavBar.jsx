@@ -10,20 +10,20 @@ const NavBar = () => {
     const reference = useRef();
 
   return (
-    <header className="w-full py-10 px-5 flex justify-center items-center">
+    <header className="w-full py-5 px-5 flex justify-center items-center">
         <nav className="flex items-center justify-between gap-5 lg:w-5/6 w-full" >
             <img src={appleImg} alt="apple" width={18} height={18}/>
 
             <div ref={reference} className={clsx("relative flex gap-5 text-center",
                 {
-                    "max-sm:bg-zinc-900 max-sm:small-menu max-sm:rounded-xl max-sm:border max-sm:border-zinc-700 max-sm:scale-100 max-sm:mt-5 max-sm:py-5": menuShown,
+                    "max-sm:bg-zinc-900 max-sm:small-menu max-sm:rounded-xl max-sm:border max-sm:border-zinc-700 max-sm:scale-100 max-sm:mt-5 max-sm:py-5 max-sm:z-10": menuShown,
                     "max-sm:hidden": !menuShown
                     
                 }
             )}>
                 {
                     navLists.map((el, i) => (
-                        <p key={i} className="text-sm cursor-pointer max-sm:py-5 text-custom-gray px-5 hover:text-white transition-all">
+                        <p key={i} className="text-sm cursor-pointer max-sm:py-5 text-custom-gray px-3 hover:text-white transition-all">
                             {el}
                         </p>
                     ))
