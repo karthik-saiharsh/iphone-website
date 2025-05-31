@@ -1,1 +1,1 @@
-## Learning GSAP and three.js by building a iphone website
+## Learning GSAP and three.js by building an iphone website
