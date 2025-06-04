@@ -26,7 +26,6 @@ const Hero = () => {
         function handleResizeVideo() {
             if(window.innerWidth < 760) setVideoSrc(smallHeroVideo);
             else setVideoSrc(heroVideo);
-            console.log("I am called")
         }
 
         window.addEventListener('resize', handleResizeVideo);
